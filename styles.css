@@ -104,14 +104,20 @@ a:hover {
     font-size: 12px;
 }
 
-@media (max-width: 650px){
+@media (max-width: 500px){
     .info, .about-me, .skill, .projects {
-        width: 120%;
+        width: 100%;
         text-align: center;
         display: block;
     }
     .projects a {
         font-size: small;
+    }
+}
+
+@media screen and (max-width : 992px){
+    .container {
+        width: 100%;
     }
 }
 
