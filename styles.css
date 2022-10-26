@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Rubik&display=swap');
+
+body {
+    background-color: white;
+    color: #0f141e;
+    font: normal 24px 'Rubik', sans-serif;
+}
+
+.container {
+    margin: auto;
+    padding-top: 40px;
+    width: 70%;
+    height: 70%;
+}
+
+.block {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.block h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 34px;
+}
+
+a {
+    color: #444B5A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.avatar {
+    margin-top: 5%;
+    height: 400px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    background: #a7d0df;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.about-me-text {
+    margin: 20px;
+}
+
+.about-me-img {
+    margin-top: 5%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.skill {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.skill-table{
+    width: 100%;
+}
+
+.skill-table td {
+    margin-bottom: 10px;
+}
+
+.skill-img {
+    width: 300px;
+}
+
+.project-text {
+    background: #a7d0df;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+}
+
+.contact {
+    margin-bottom: 40px;
+}
+
+.footer {
+    border-radius: 20px;
+    background-color: #a7d0df;
+    padding: 15px 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 650px){
+    .info, .about-me, .skill, .projects {
+        width: 120%;
+        text-align: center;
+        display: block;
+    }
+    .projects a {
+        font-size: small;
+    }
+}
+
