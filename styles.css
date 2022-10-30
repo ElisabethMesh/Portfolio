@@ -121,3 +121,31 @@ a:hover {
     }
 }
 
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;}
+summary {
+    display:inline-block;
+    padding: .3em .6em .3em 1.5em;
+    cursor: pointer;
+    position: relative;
+}
+summary:before {
+    left: .3em;
+    top: .4em;
+    color: transparent;
+    background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 2em 2em;
+    width: 0.5em;
+    height: 3.5em;
+    content: "";
+    position: absolute;
+    transition: transform .5s;
+}
+details[open] > summary:before {
+    transform: rotateZ(90deg);
+}
+summary ~ * {
+    padding:0 1em 0 1em;
+}
+
+
